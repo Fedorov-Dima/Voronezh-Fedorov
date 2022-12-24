@@ -29,7 +29,7 @@ class Example(QMainWindow):
         d = random.randrange(1, 200)
         x = random.randrange(100, 600)
         y = random.randrange(100, 400)
-        qp.setBrush(QColor('yellow'))
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         qp.drawEllipse(x, y, d, d)
 
 
